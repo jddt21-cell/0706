@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 京都大阪星曜旅程</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {
+      font-family:'Noto Sans TC',sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255,215,0,0.18), transparent 30%),
+        linear-gradient(135deg,#12051d 0%,#1e0933 45%,#090011 100%);
+      color:#f8fafc;
+      min-height:100vh;
+      line-height:1.7;
+      padding:12px 18px 60px;
+      overflow-x:hidden;
+    }
+    .container{max-width:1280px;margin:0 auto;}
+    .hero{
+      position:relative;
+      padding:42px 48px;
+      border-radius:36px;
+      overflow:hidden;
+      margin-bottom:28px;
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,215,0,0.2);
+      backdrop-filter:blur(18px);
+    }
+    .date-badge{
+      display:inline-flex;
+      padding:12px 20px;
+      border-radius:999px;
+      background:linear-gradient(135deg,#facc15,#f59e0b);
+      color:#14091f;
+      font-weight:900;
+      margin-bottom:20px;
+    }
+    h1{font-size:3rem;font-weight:900;margin-bottom:16px;}
+    .subtitle{color:#d8c9ff;margin-bottom:20px;}
+    .weather-box{
+      display:inline-flex;
+      gap:14px;
+      align-items:center;
+      background:rgba(255,255,255,0.08);
+      padding:14px 18px;
+      border-radius:20px;
+    }
+    .timeline{display:grid;gap:26px;}
+    .card{
+      border-radius:34px;
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.1);
+      overflow:hidden;
+    }
+    .card-inner{
+      display:grid;
+      grid-template-columns:140px 1fr;
+    }
+    .time{
+      background:linear-gradient(180deg,rgba(250,204,21,0.25),rgba(168,85,247,0.12));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:1.4rem;
+      font-weight:900;
+      color:#fde68a;
+      padding:24px;
+    }
+    .content{padding:28px;}
+    .tag{
+      display:inline-flex;
+      padding:8px 16px;
+      border-radius:999px;
+      background:rgba(255,255,255,0.08);
+      color:#fde68a;
+      margin-bottom:14px;
+    }
+    .title{font-size:1.9rem;font-weight:900;margin-bottom:10px;}
+    .desc{color:#d6d3f3;margin-bottom:18px;}
+    .transport{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px;}
+    .transport-item{
+      background:rgba(255,255,255,0.08);
+      padding:10px 14px;
+      border-radius:14px;
+    }
+    .photos{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:14px;
+      margin-bottom:20px;
+    }
+    .photos img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      border-radius:20px;
+    }
+    .actions{display:flex;flex-wrap:wrap;gap:14px;}
+    .btn{
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:16px;
+      font-weight:700;
+    }
+    .btn-map{
+      background:linear-gradient(135deg,#facc15,#f59e0b);
+      color:#14091f;
+    }
+    .btn-route{
+      background:rgba(255,255,255,0.08);
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.12);
+    }
+    .route-line{
+      width:4px;
+      height:70px;
+      margin:0 auto;
+      border-radius:999px;
+      background:linear-gradient(to bottom,rgba(250,204,21,0.9),rgba(168,85,247,0.15));
+    }
+    .footer{
+      margin-top:60px;
+      text-align:center;
+      color:#c4b5fd;
+    }
+    @media(max-width:768px){
+      .card-inner{grid-template-columns:1fr;}
+      .time{justify-content:flex-start;}
+      h1{font-size:2.2rem;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<section class="hero">
+<div class="date-badge">✦ 2026 / 07 / 06 ・ 京都大阪旅程</div>
+<h1>星曜・京都大阪<br>一日美食散策</h1>
+<p class="subtitle">宇治 × 平等院 × 錦市場 × 道頓堀 ｜ 深紫金色 iPhone 旅遊卡片 UI</p>
+
+<div class="weather-box">
+<div style="font-size:2rem;font-weight:900;color:#fde68a;">31°C</div>
+<div>
+<div>日本關西地區</div>
+<div>晴時多雲 ☀️｜降雨機率 20%</div>
+</div>
+</div>
+</section>
+
+<section class="timeline">
+
+<div class="card">
+<div class="card-inner">
+<div class="time">08:00</div>
+<div class="content">
+<div class="tag">☀️ 早餐</div>
+<div class="title">Hotel Hillarys 飯店早餐</div>
+
+<div class="desc">
+① Hotel Hillarys 步行約 6 分至南海難波站<br>
+② Osaka Metro 御堂筋線 → 梅田站<br>
+③ JR 大阪站 → 京都站<br>
+④ JR 奈良線 → 宇治站
+</div>
+
+<div class="photos">
+<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop">
+</div>
+
+<div class="actions">
+<a class="btn btn-map" target="_blank" href="https://maps.google.com/?q=Hotel+Hillarys+Osaka">Google Maps</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="route-line"></div>
+
+<div class="card">
+<div class="card-inner">
+<div class="time">15:00</div>
+<div class="content">
+<div class="tag">🛍 錦市場</div>
+<div class="title">京都錦市場</div>
+
+<div class="desc">
+推薦名店：<br>
+▸ 打田漬物<br>
+▸ 錦市場 櫂 KAI<br>
+▸ 三木雞卵<br>
+▸ カリカリ博士
+</div>
+
+<div class="photos">
+<img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop">
+</div>
+
+<div class="actions">
+<a class="btn btn-map" target="_blank" href="https://maps.google.com/?q=Nishiki+Market+Kyoto">導航至錦市場</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="route-line"></div>
+
+<div class="card">
+<div class="card-inner">
+<div class="time">18:30</div>
+<div class="content">
+<div class="tag">🍣 晚餐</div>
+<div class="title">道頓堀晚餐</div>
+
+<div class="desc">
+推薦名店：<br>
+▸ 一蘭拉麵<br>
+▸ 金龍拉麵<br>
+▸ 本家大たこ<br>
+▸ 燒肉力丸
+</div>
+
+<div class="photos">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=1200&auto=format&fit=crop">
+</div>
+
+<div class="actions">
+<a class="btn btn-map" target="_blank" href="https://maps.google.com/?q=Dotonbori+Osaka">導航至道頓堀</a>
+</div>
+
+</div>
+</div>
+</div>
+
+</section>
+
+<div class="footer">
+✦ 星曜旅遊版型 ・ Kyoto & Osaka Travel UI ・ 2026 ✦
+</div>
+
+</div>
+
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
+
+</body>
+</html>
